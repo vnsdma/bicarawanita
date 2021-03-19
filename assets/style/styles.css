@@ -1,0 +1,6 @@
+a:hover .navlink{
+	color: yellow;
+}
+a:active .navlink{
+	color: yellow;
+}
