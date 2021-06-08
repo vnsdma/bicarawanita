@@ -1,6 +1,148 @@
 a:hover .navlink{
-	color: yellow;
-}
-a:active .navlink{
-	color: yellow;
-}
+    color: yellow;
+  }
+  a:active .navlink{
+    color: yellow;
+  }
+  
+  .con{
+    width: 600px;
+    margin:auto;
+  
+  }
+  .in{
+    width: 600px;
+    padding: 10px;	
+    border: 1px solid #EFEFEF;
+  }
+  .in:focus{
+    border: #3498db solid 1px;
+    width: 50%;
+    transition: width 2s;
+    box-shadow: 1px 0px 2px #3498db;
+  }
+  .submit{
+    padding: 10px;
+    background: #3498db;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    font-size:15px;
+  }
+  .submit:hover{
+    background: #2980b9;
+    /*border-left: 10px solid #fff;*/
+    transition:  background 1s;
+  }
+  h2{
+    font-family: arial;
+    text-align: center;
+    color: #2980b9;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .isi{
+    border:1px solid #3498db;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  h3{
+    font-family: arial;
+    text-align: center;
+    color: #2980b9;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  #error{
+    /*background: #f39c12;*/
+    border: 1px solid #e74c3c;
+    width: 580px;
+    color: #e74c3c;
+    font-family: arial;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px auto;
+  }
+  #sukses{
+    border: 1px solid #2ecc71;
+    width: 580px;
+    color: #2ecc71;
+    font-family: arial;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px auto;
+  }
+  .hr{
+    border-bottom:  1px solid #3498db;
+  }
+  #pic{
+    display: none;
+      }
+      
+  .newbtn{
+      cursor: pointer;
+     }
+     #blah{
+   max-width:280px;
+   height:193px;
+   margin-top:20px;
+  }
+  
+  .isi1 {
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  }
+  .play {
+    position: relative;
+    background: #eee; /* play (background) color */
+    border: none;
+    outline:none;
+    height: 5em;
+    width: 5em;
+    font-size: 3em;  /* Change size */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    cursor:pointer;
+    }
+    
+    .play:focus{
+    outline:none;
+    }
+    
+    .play:before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    height: 0;
+    border-style: solid;
+    border-width: 1em 0 1em 2em;
+    border-color: transparent transparent transparent #e52d27; /* icon color */
+    transition: .218s ease;
+    }
+    
+    .play:hover:before {
+    height: 2em;
+    border-width: 0 0 0 2em;
+    }
+    
+    .play:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    width: 0;
+    height: 2em;
+    top: 1.5em;
+    left: 2.25em;
+    transition: .218s ease;
+    }
+    
+    .play:hover:after {
+    width: .5em;
+    }

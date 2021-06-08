@@ -16,18 +16,7 @@
   }
 }
 
-.jumbotron1 {
-  height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-attachment: fixed;
 
-}
 
 #header {
   display: flex;
@@ -73,6 +62,7 @@
     font-weight: bold;
     color: white;
     position: absolute;
+    background-color: #E94924;
   }
   .bottom-left1 {
     position: absolute;
@@ -121,6 +111,11 @@
     width: 100%;
     max-width: 350px;
   }
+  .container4 {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+  }
   
   /* Make the image to responsive */
   .image {
@@ -130,12 +125,23 @@
   }
   
   /* The overlay effect - lays on top of the container and over the image */
-  .overlay {
+  .overlay1 {
     position: absolute;
     bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
+    color: #f1f1f1; 
     width: 100%;
     transition: .5s ease;
     opacity:0;
@@ -144,16 +150,132 @@
     padding: 20px;
     text-align: center;
   }
-  
+  .overlay5 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }  
   /* When you mouse over the container, fade in the overlay title */
   .container3:hover .overlay {
     opacity: 1;
   }
+  .container3:hover .overlay5 {
+    opacity: 1;
+  }
 
   .jumbotron {
-    background-image: url(../img/hero.webp);
+    background-image: url(../img/hero1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+  .playPauseButton{
+    position: relative;
+    /* the button's background color */
+    background: #fff; 
+    border: none;
+    outline:none;
+    height: 5em;
+    width: 5em;
+    font-size: 2em; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    cursor:pointer;
+     /* the button's a circle */ 
+    -moz-border-radius: 5em;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+    
+  }
+  
+  .playPauseButton:focus{
+    outline:none;
+  }
+  
+   /* the button's top layer: size, shape, appearance */
+  .playPauseButton:before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+     /* for visual centering */
+    left: 1.67em;
+    height: 0;
+    border-style: solid;
+    border-width: 1em 0 1em 2em;
+    /* create shape with color */
+    border-color: transparent transparent transparent #e52d27; 
+    transition: .218s ease;
+  }
+  
+  .playPauseButton:hover:before {
+    height: 2em;
+    border-width: 0 0 0 2em;
+  }
+  
+   /* the button's mouseover/click/hover layer: size, shape, appearance */
+  .playPauseButton:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    width: 0;
+    height: 2em;
+    top: 1.5em;
+     /* for visual centering */
+    left: 2.42em;
+    transition: .218s ease;
+  }
+  
+  .playPauseButton:hover:after {
+    width: .5em;
+  }
+  .background-color {
+    background-color:#E94924 ;
+  }
+  .white {
+    color: white;
+  }
+
+  .buttons {
+    background-color: #E94924; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px ;
+  }
+  .kotak {
+    position: relative;
+width: 64.5px;
+height: 54px;
+
+background: #FFFFFF;
+box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+  }
+  a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+  
+  
